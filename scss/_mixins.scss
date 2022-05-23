@@ -1,0 +1,18 @@
+@mixin titles {
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    padding-top: 50px;
+}
+
+@mixin tablet ( $medida : 760px ) {
+    @media screen and (min-width: $medida) {
+        @content;
+    }
+}
+
+@mixin desktop ( $medida-desk : 1024px ) {
+    @media screen and (min-width: $medida-desk) {
+        @content;
+    }
+}

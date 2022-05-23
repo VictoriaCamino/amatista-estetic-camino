@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+
+/*RESET*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+/*GENERALES*/
+a {
+    text-decoration: none;
+}
+
+.container{
+    padding: 0 30px;
+    @include tablet(){
+        padding: 0 80px;
+    }
+}
+
+.background{
+    background-color: $background-page;
+}
+.background-footer{
+    background-color: $background-footer;
+}
